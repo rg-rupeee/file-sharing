@@ -4,7 +4,7 @@
   "description": "file sharing web based application",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "serve": "node server.js "
   },
   "author": "Rupesh Garhwal <rupeshgarhwal3920@gmail.com>",
