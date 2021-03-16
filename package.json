@@ -4,12 +4,13 @@
   "description": "file sharing web based application",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "serve": "node server.js "
   },
   "author": "Rupesh Garhwal <rupeshgarhwal3920@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
