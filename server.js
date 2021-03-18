@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const cors = require('cors');
+const cors = require("cors");
 
 const connectDB = require("./config/db");
 
@@ -17,8 +17,12 @@ connectDB();
 
 // CORS
 const corsOptions = {
-    origin: process.env.ALLOWED_CLIENTS.split(',')
-}
+  // origin: process.env.ALLOWED_CLIENTS.split(',')
+  origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+};
 app.use(cors(corsOptions));
 
 // Template engine
